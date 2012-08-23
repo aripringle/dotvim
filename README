@@ -13,7 +13,8 @@ Create symlinks:
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
-    git submodule update --init ~/.vim
+    cd ~/.vim
+    git submodule update --init
 
 Compilation for Command-T plugin
 
