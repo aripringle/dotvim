@@ -14,3 +14,8 @@ Create symlinks:
 Switch to the `~/.vim` directory, and fetch submodules:
 
     git submodule update --init ~/.vim
+
+Compilation for Command-T plugin
+
+	cd ~/.vim/bundle/command-t
+	rake make
