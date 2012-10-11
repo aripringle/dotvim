@@ -2,7 +2,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 "filetype on
-filetype plugin indent on
+"filetype plugin indent on
 
 if has('autocmd')
 	" Fix python tabs?
@@ -115,7 +115,7 @@ nmap Q gqap
 "---------------------------------------------------
 " Tags file (use ctags)
 let Tlist_Use_Right_Window = 1    " tags list on right window
-:set tags=.vimtags,~/.vimtags
+:set tags=.vimtags,~/.vimtags,~/projects/.vimtags
 map <silent> <leader>l :Tlist<CR>
 
 "---------------------------------------------------
