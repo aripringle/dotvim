@@ -19,7 +19,8 @@ set hidden                          " Buffers get hidden rather than closed
 set nocompatible					" Don't be compatible with old-school vi
 set ts=4							" set tabstop to 4 spaces (tab width)
 set shiftwidth=4					" Prevent tabs from doing double-tab indents
-set sm
+"set showmatch                      " automatically jump back to matched bracket
+set cursorline                      " underline the line that cursor is on
 set autoindent						" auto-indent after hitting <cr>
 set smartindent						" auto-indent after curly brackets
 set ignorecase						" ignore case when searching
@@ -29,6 +30,9 @@ set hlsearch						" highlight search terms
 set wildmode=longest:list,full		" set custom tab auto-completion style
 set whichwrap=b,s,h,l,<,>,[,]		" backspace and cursor keys wrap to
 set nu								" show lines numbers
+
+" Change parentheses match highlighting to underline/bold
+:hi MatchParen cterm=underline,bold ctermbg=none ctermfg=none
 
 "--------------------------------------------------
 " Word completion on <TAB>
