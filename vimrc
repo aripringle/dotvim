@@ -100,6 +100,21 @@ nmap <silent> <leader>n :set number!<cr>
 nmap <silent> <leader>j <c-w>w<c-d><c-w>W
 nmap <silent> <leader>k <c-w>w<c-u><c-w>W
 
+" \m to enable mouse
+function! ToggleMouse()
+  if &mouse == 'a'
+    set mouse=
+    echo "Mouse usage disabled"
+  else
+    set mouse=a
+    echo "Mouse usage enabled"
+  endif
+endfunction
+nmap <silent> <leader>m :call ToggleMouse()<cr>
+
+" \z to toggle window zoom (useful for using mouse to copy-n-paste)
+nmap <silent> <leader>z <c-w>o:set number!<cr>
+
 "--------------------------------------------------
 " \v toggles paste/nopaste
 " F7 toggles it in insert mode
