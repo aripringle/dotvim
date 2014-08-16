@@ -30,6 +30,7 @@ set hlsearch						" highlight search terms
 set wildmode=longest:list,full		" set custom tab auto-completion style
 set whichwrap=b,s,h,l,<,>,[,]		" backspace and cursor keys wrap to
 set nu								" show lines numbers
+set expandtab                       " use spaces instead of tabs
 
 " Change parentheses match highlighting to underline/bold
 :hi MatchParen cterm=underline,bold ctermbg=none ctermfg=none
